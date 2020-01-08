@@ -1,0 +1,41 @@
+#main {
+  background: white;
+  font-family: Constantia;
+}
+#title {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Bad Script', cursive;
+  background: gray;
+  padding-bottom: 100px;
+  margin-bottom: 0px;
+}
+#image {
+  max-width: 40%;
+  margin-top: -100px;
+  text-align: center;
+}
+#img-div{
+  text-align: center;
+  background: lightgray;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 50px;
+}
+#tribute-info {
+  background: lightgray;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -20px;
+  padding-bottom: 30px;
+}
+h2 {
+  text-align: center;
+}
+#footer {
+  background: lightgray;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -20px;
+  text-align: center;
+}
