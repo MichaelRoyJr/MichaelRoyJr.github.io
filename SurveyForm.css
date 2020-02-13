@@ -1,0 +1,78 @@
+body {
+  background: midnightblue;
+  background-image:
+  /** linear-gradient(black, midnightblue),**/
+  url("https://www.cityofwoodland.org/ImageRepository/Document?documentID=4868");
+  background-size: cover;
+  background-attachment: fixed;
+  /**
+  background-blend-mode: color; **/
+}
+main {
+  font-family: Arial, sans-serif;
+  background: lightsteelblue;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-color: black;
+  border-width: 10px;
+  border-radius: 3px;
+  }
+h2 {
+  margin-bottom: 0px;
+}
+#title {
+  text-align: center;
+  padding-top: 3%;
+}
+#description {
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  font-size: 30px;
+}
+#survey-form {
+  margin-left: 5%;
+}
+#dropdown {
+  margin-top: 2px;
+  border-radius: 5px;
+  width: 70%;
+  height: 25px;
+}
+.text-field {
+  border-radius: 5px;
+  padding-top: -10%;
+  width: 70%;
+  height: 25px;
+}
+.name-label {
+  margin-bottom: -20px;
+}
+textarea {
+  border-radius: 5px;
+  margin-bottom: 7%;
+  width: 70%;
+  height: 100px;
+  margin-top: 10px;
+}
+#submit {
+  padding: 8px 40px 8px 40px;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  color: white;
+  border-color: midnightblue;
+  background: steelblue;
+}
+#button-div {
+  text-align: center;
+}
+#button-text {
+  margin-top: 0px;
+}
+#photo-div {
+  text-align: center;
+}
+#photo {
+  max-width: 15%;
+}
