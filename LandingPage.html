@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="LandingPage.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTGuaTODnVgvfIjFhto-myLM2fyuXX4tMgEy1kdLbbJn2kSq34Y" id="header-img">
+
+      <div id="product-name">
+        <h2><em>THE ALL NEW 2020 CORVETTE STINGRAY</em></h2>
+      </div>
+      <nav id="nav-bar">
+        <a href="#specs-heading" class="nav-link">Specs</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+    </header>
+    <main>
+      <div id="top-box">
+        <div id="top-box-text">
+          <h1>Come see the new 2020 Chevrolet Corvette!</h1>
+        </div>
+        <div id="top-box-image">
+          <img id="car-image" src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2020/zerv-pre-reveal/01-images/2020-corvette-reveal-masthead-f1.jpg">
+        </div>
+      </div>
+      <div id="middle-box">
+        <div id="specs">
+          <h1 class="heading" id="specs-heading">SPECIFICATIONS</h1>
+          <hr>
+          <ul id="specs-list">
+            <li>6.2L V8 w/ Cylinder Deactivation</li>
+            <li>495 Horsepower</li>
+            <li>470 ft-lbs Torque</li>
+            <li>0-60 in 2.9s</li>
+            <li>Top speed 194mph</li>
+            <li>Dual-clutch Transmission</li>
+          </ul>
+        </div>
+        <div id="video-div">
+          <iframe id="video" src="https://www.youtube.com/embed/zHvlfkynKWI">
+          </iframe>
+        </div>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h3>Claim your <strong><em>FREE</em></strong> gift</h3>
+          <p>Sign up today for a test drive at your local dealer to receive your
+            2020 Corvette Stingray detailing kit!</p>
+            <ul><strong>Includes:</strong>
+              <li>Stingray soft cloth</li>
+              <li>Large Chevrolet towel</li>
+              <li>Meguiar's Ultimate Liquid Wax</li>
+              <li>Special buffing towel</li>
+              <li>Limited edition Corvette keychain</li>
+            </ul>
+            <input name="email" type="email" id="email" placeholder="youremail@provider.com" required></br></br>
+            <input id="submit" type="submit" value="Claim your gifts">
+            <p id="fine-print">No purchase necessary. All gifts are yours to keep. Approximate retail value $150</p>
+        </form>
+      </div>
+      <div id="reviews">
+        <h1 class="heading">WHAT THE EXPERTS SAY</h1>
+        <hr>
+        <div id="review-flex">
+          <div id="review-text-div">
+            <h3 class="review-text">Car and Driver</h3>
+            <p class="review-text"><em>"Supercar performance at an amazing price, comfortable on the road and
+               incredible on the track, much improved interior quality.  With incredible
+               performance at an incredible price, the C8 Corvette is also the best Corvette yet."</em></p>
+            <h3 class="review-text">MotorTrend</h3>
+            <p class="review-text"><em>"We like the C8 Corvette Stingray. We like it a lot. So much, in fact,
+              that we named it our 2020 Car of the Year. Its acceleration, braking, and
+              handling are on the level of true exotic supercars."</em></p>
+            <h3 class="review-text">Edmunds</h3>
+            <p class="review-text"><em>"The Corvette equals or outshines cars costing twice to three times as much.
+              We're hugely impressed with how the new Corvette turned out. It's stupid fast.
+              We picked the 2020 Chevrolet Corvette as Edmunds' Top Rated Sports Car of 2020."</em></p>
+          </div>
+          <div id="review-image-div">
+            <img id="review-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDqeQ71g19kJ35hU4E_pQlUR9DZD8Yj7PS5HYpboY5FN3Snt38">
+          </div>
+        </div>
+      </div>
+      <div id="pricing">
+        <h1 class="heading">TRIM LEVELS & PRICING</h1>
+        <hr>
+        <div id="trim-levels">
+          <div id="onelt" class="level">
+            <h2>1LT</h2>
+            <ul>
+              <li>Bose premium 10-speaker system</li>
+              <li>Standard 8-way power GT1 seats</li>
+              <li>Driver Mode Selector</li>
+              <li>All season performance tires</li>
+            </ul>
+            <h3>Starting at $59,995</h3>
+          </div>
+          <div id="twolt" class="level">
+            <h2>2LT</h2>
+            <ul>
+              <li>Front curb view cameras</li>
+              <li>Bose Performance Series 14-speaker audio system</li>
+              <li>Heated/vented seats and heated steering wheel</li>
+              <li>Available GT2 seats in Napa leather</li>
+            </ul>
+            <h3>Starting at $67,295</h3>
+          </div>
+          <div id="threelt" class="level">
+            <h2>3LT</h2>
+            <ul>
+              <li>13 interior color options</li>
+              <li>Custom leather-wrapped instrument panel and door</li>
+              <li>Sueded-microfiber upper interior trim</li>
+              <li>Standard GT2 seats in Napa leather</li>
+            </ul>
+            <h3>Starting at $71,945</h3>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+    Specifications and trim-level information courtesy chevrolet.com
+  </footer>
+  </body>
+</html>
