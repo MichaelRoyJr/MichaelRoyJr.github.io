@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="TechnicalDocument.css" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header class="nav-header">
+        <h1>C# Programming Language</h1>
+      </header>
+      <ul id="link-list">
+        <li class="nav-item"><a href="#About_C#" class="nav-link">About C#</a></li>
+        <li class="nav-item"><a href="#Data_Types_and_Variables" class="nav-link">Data Types and Variables</a></li>
+        <li class="nav-item"><a href="#Statements" class="nav-link">Statements</a></li>
+        <li class="nav-item"><a href="#Object-Oriented_Features" class="nav-link">Object-Oriented Features</a></li>
+        <li class="nav-item"><a href="#Windows_Programming" class="nav-link">Windows Programming</a></li>
+        <li class="nav-item"><a href="#Web_Programming" class="nav-link">Web Programming</a></li>
+        <li class="nav-item"><a href="#ADO.NET" class="nav-link">ADO.NET</a></li>
+        <li class="nav-item"><a href="#LINQ" class="nav-link">LINQ</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="About_C#">
+        <header>
+          <h1>About C#</h1>
+          <hr>
+        </header>
+        <p>C# is an object oriented, event driven, strongly typed programming language.
+          It is the language of preference for .NET developers.  In fact, C# was used
+          for much of the development of the .NET framework class libraries.  The language
+          is often considered similar to Java, C, and C++.  It includes GUI development
+          ability akin to Visual Basic, and object-oriented class libraries, like Java.
+          Visual Studio is the preferred IDE for many C# programmers.
+        </p>
+        <p>C# supports strongly typed variables with relatively few implicit conversions.
+          Array bounds and variable initialization are checked for validity.  Memory
+          de-allocation is unnecessary as C# provides for automatic garbage collection.
+          Safe object references are used to ensure all references are made to live
+          objects or null objects.  Random memory location access, as well as a dead
+          pointer, is impossible.
+        </P>
+        <h2>Hello World Program</h2>
+        <pre class="code">
+          <code>
+              using namespace System;
+              class HelloWorld
+              {
+                public static void Main(string[] args)
+                {
+                  Console.WriteLine("Hello World!");
+                }
+              }</code>
+        </pre>
+      </section>
+      <section class="main-section" id="Data_Types_and_Variables">
+        <header>
+          <h1>Data Types and Variables</h1>
+          <hr>
+        </header>
+        <p>C# utilizes the common type system (CTS) of the .NET framework.  These
+          types are divided into two categories: Value types and Reference types.
+          The following are the primitive value types:
+          <ul>
+            <li>int</li>
+            <li>char</li>
+            <li>double</li>
+            <li>char</li>
+            <li>decimal</li>
+            <li>bool</li>
+            <li>byte</li>
+          </ul>
+          Multiple sizes of many of these types are also allowed e.g. float, short,
+          long.
+        </p>
+        <p>In addition to the primitive types, Classes, including user designed classes,
+          structs, and enumerated types are also allowed. Type conversion must be done
+          explicitly, usually through casting.
+        </p>
+        <p>Variables in C# must be declared with a type and identifier. The type must
+          be one of the primitive types or declared types from above.  The identifier
+          can be any unique string of alphabetic, numeric, and the underscore ('_')
+          character.  Identifiers may not begin with a number. Variables may also be
+          initialized at declaration, but are not required to.
+        </p>
+        <pre class="code">
+          <code>
+              //integer declaration
+              int num;
+
+              //integer declaration and initialization
+              int num = 22;</code>
+        </pre>
+        <p>C# supports implicitly typed variable declaration with the var keyword.
+          The declared variable is assigned a type at compile time, and does not change
+          (strongly typed).
+        </p>
+        <pre class="code">
+          <code>
+              //implicit variable declaration and initialization
+              var expr1 = 13 + (11 % 3);
+              var expr2 = 10.4 + (3 * 2);
+          </code>
+        </pre>
+         <p>In the code above the first variable declaration results in expr1 being
+           declared with type int.  In the second line of code expr2 is similarly declared
+           as type double.
+         </p>
+      </section>
+      <section class="main-section" id="Statements">
+        <header>
+          <h1>Statements</h1>
+          <hr>
+        </header>
+        <p>C# programs consist of a series of executable statements. Statements are
+          often defined in terms of other embedded statements.  A block allows a series
+          of statements placed inside curly braces to replace a single statement.  All
+          statements must be separated by a semicolon. Spacing is not specified, but
+          usually conforms to style much like that of Java.  Statements can be any
+          of the following:
+          <ul>
+            <li>Declarations</li>
+            <li>Expressions</li>
+            <li>Selection Statements</li>
+            <li>Iteration Statements</li>
+            <li>Jump Statements</li>
+            <li>Exception Handling</li>
+          </ul>
+          Each of these categories will be discussed in detail in the following sections,
+          including examples. This list is not exhaustive. Other valid statements
+          include checked/unchecked, lock, and goto, but will not be discussed further
+          here.
+        </p>
+        <h2>Declaration Statements</h2>
+        <p>These statements are used to declare a local variable. Often this statement
+          is used in conjunction with an immediate assignment of the declared variable.
+        </p>
+        <pre class="code">
+          <code>
+              int number;             //variable declaration
+              const int NUMBER;       //variable declared as a constant value
+              int number = 16;        //variable declared and assigned value of 16</code>
+        </pre>
+        <h2>Expression Statements</h2>
+        <p>Expression statements are used to evaluate expressions.  Expressions that
+          can be evaluated include arithmetic operations, assignments using =, as
+          mentioned above, method calls, increment and decrement operations, and
+          object allocations.
+        </p>
+        <pre class="code">
+          <code>
+              int number = 11;                    //assignments
+              number = (14 + 4) / 2;              //arithmetic expression
+              Console.WriteLine("Output");        //method invocation
+              number++;                           //increment
+              object name = new object();         //memory allocation for a new instance of an object</code>
+        </pre>
+        <h2>Selection Statements</h2>
+        <p>Selection statements, often called conditional statements, select an action
+          based on the value of some condition.  These statements allow programs to
+          make decisions.  C# utilizes two decision making structures: if (including
+          if...else, and if...else if...else) and switch.
+        </p>
+        <p>If statements test a condition, and only perform the following action when
+          the condition is met.  These statements can also be followed by an optional
+          else statement whose contents is executed only if the condition is not met.
+          If...else statements can be chained in the following form to test for a series
+          of conditions: if...else if...else.  Any number of 'else if' statements
+          can be included.
+        </p>
+        <pre class="code">
+          <code>
+              if (number > 5)
+                Console.WriteLine("The number is larger than five");
+
+              if (number > 5)
+                Console.WriteLine("The number is larger than five");
+              else
+                Console.WriteLine("The number is smaller than five");
+
+              if (number < 3)
+                Console.WriteLine("The number is small.");
+              else if (number < 7)
+                Console.WriteLine("The number is medium.");
+              else
+                Console.WriteLine("The number is large.");</code>
+        </pre>
+        <p>Switch statements choose between a series of mutually exclusive options,
+          based on the value of an evaluated expression. If the value of each case
+          matches the value of the condition, statements that follow are executed.
+          If nocase matches, a default reult may be provided.  Each case ends with
+          a break statement, which exits the switch construct.
+        </p>
+        <pre class="code">
+          <code>
+              int n = Result(expression);             //n has a value calculated in the Result() method
+              switch (n)
+              {
+                case 0:
+                  Console.WriteLine("Result = 0");
+                  break;
+                case 1:
+                  Console.WriteLine("Reslut = 1");
+                  break;
+                default:
+                  Console.WriteLine("Result non-binary");
+                  break;
+              }</code>
+        </pre>
+        <h2>Iteration Statements</h2>
+        <p>Iteration statements, often called loops, are those which allow a statement,
+          or a block of statements, to be repeated.  C# has a number of different
+          iteration statements, each for different applications.  While, for, and
+          foreach will be discussed here.
+        </p>
+        <p>While statements allow a block to be repeated until a condition is met.
+        Each pass through the loop begins with an evaluation of a conditional expression.
+        If the expression evaluates to true, the actions contained in the loop are executed,
+        then the loop starts over. A do statement may be added at the beginning to
+        ensure the loop executes at least once.
+        </p>
+        <pre class="code">
+          <code>
+              int i = 64;
+              while (i > 8)
+              {
+                i = i / 2;
+              }</code>
+        </pre>
+        <p>For loops are constructed to iterate over a loop a specific number of
+          times. A for command contains the iterator variable, often i or j, the
+          condition to evaluate, and some sort of modification of the iterator, usually
+          an increment or decrement.
+        </p>
+        <pre class="code">
+          <code>
+              for (int i = 0; i < 100; i++)
+              {
+                total += i;
+              }</code>
+        </pre>
+        <p>The final iteration statement, foreach, iterates a block of code over
+          the members of a collection. This is often used to perform a calculation
+          on all members of a specified or calculated list, without the necessity of
+          knowing the length ofthe collection.
+        </p>
+        <pre class="code">
+          <code>
+              foreach (string word in A)            //assume string[] A has been
+              {                                     //has been previously defined
+                result += string;
+              }</code>
+        </pre>
+        <h2>Jump Statements</h2>
+        <p>Jump statements transfer control to another portion of the program.  Previously,
+          we have seen break used to end a switch statement.  Its counterpart, continue,
+          is used when a potential outcome of a selection results in no code to execute.
+          Also commonly used is return, which sends control back to where a method was called.
+        </p>
+        <h2>Exception Handling</h2>
+        <p>These statements are used to isolate a portion of code and allow runtime exceptions
+          to be handled programmatically, rather than cause termination.  In C#,
+          try, catch, throw, and finally are used for exception handling.
+        </p>
+      </section>
+      <section class="main-section" id="Object-Oriented_Features">
+        <header>
+          <h1>Object-Oriented Features</h1>
+          <hr>
+        </header>
+        <p>C# is designed to be object-oriented.  A class structure defines the language.
+          All statements must be part of a class.  Classes can inherit from another
+          class, but may only inherit from one class.  Abstract classes may be defined.
+          Classes inheriting from these must implement all methods declared in the
+          abstract class. Methods may be overridden in inherited classes and virtual
+          methods requiring implementation may be declared.
+        </p>
+        <p>Interfaces can be used to force common functionality onto a class.  They
+          contain only the signature of members that must be implemented by any class
+          that implements the interface. A class can implement any number of interfaces.
+          The .NET framework relies heavily on interfaces to provide common functionality
+          to many of its included classes.
+        </p>
+        <p>Polymorphism is achieved not only through overriding inherited class members,
+          but also through generics.  Generic classes or methods use one definition
+          to operate on multiple types.  For example, Stack&lt;T&gt;, defines
+          a stack structure that can accomodate any type, indicated by T.
+        </p>
+      </section>
+      <section class="main-section" id="Windows_Programming">
+        <header>
+          <h1>Windows Programming</h1>
+          <hr>
+        </header>
+        <p>C#, used in conjunction with Visual Studio allows for easy drag-and-drop
+          construction of Windows programs with interactive graphical user interfaces,
+          much like in Visual Basic.  The System.Windows.Forms namespace contains
+          many classes for Windows Form control.  Included among these are the typical
+          button, label, and textbox controls familiar to Windows users.
+        </p>
+        <p>Windows applications are usually event-driven.  Rather than execute code
+          sequentially, these applications remain in a process loop and execute sections
+          of code based on events such as mouse clicks, data entry, and clock-based
+          events.  When an event is registered, a method known as an event-handler
+          is executed.  These event-handlers can range from very simple, to extremely
+          complex, and may update properties, data, or invoke other methods. After
+          completion, control is returned to the process loop to execute the next event,
+          or wait for an event to be registered.
+        </p>
+      </section>
+      <section class="main-section" id="Web_Programming">
+        <header>
+          <h1>Web Programming</h1>
+          <hr>
+        </header>
+        <p>Web applications are developed using Active Server Pages, or ASP.NET.
+          Drag-and-drop GUI design is done similarly to Windows programs, with use
+          of the many control classes familiar to web users.  Web applications are
+          usually event-driven as well to allow much user interaction.
+        </p>
+        <p>Web programs are executed in a browser, such as Chrome or Firefox.  The
+          browser interprets an HTML, <em>Hyper-Text Markup Language</em>, file, and
+          renders the content to be viewed.  More precisely, ASP.NET uses XHTML,
+          rather than HTML, with the X meaning <em>extensible</em>.  This platform
+          allows both client-side scripting and processing done on the server.
+          Client-side processing occurs with embedded scripts using a scripting language,
+          most commonly JavaScript.
+        </p>
+        <p>When a web page is desired, a request is sent to the server, where the
+          files are stored, which sends a response to the client that includes the
+          mark-up code for the web page. When an action like filling out a form field
+          or clicking a button requires action from the application a new request is
+          sent to the server to process and return to the client.  Each subsequent update
+          requires a similar round-trip to the server. Server side processing uses C#
+          to execute program logic at the server to be sent to the client.
+        </p>
+      </section>
+      <section class="main-section" id="ADO.NET">
+        <header>
+          <h1>ADO.NET</h1>
+          <hr>
+        </header>
+        <p>ADO.NET stands for ActiveX Data Objects for .NET.  These classes are used
+          for interaction with databases, including Microsoft Access, Oracle, and SQL Server.
+          ADO.NET uses a feature called data providers to allow access to multiple
+          database architecture.  Each data provider implements many classes to retrieve,
+          manipulate, and update data. The following are core classes that make up
+          each ADO.NET data provider:
+          <ul>
+            <li>Connection</li>
+            <li>Command</li>
+            <li>DataReader</li>
+            <li>DataAdapter</li>
+          </ul>
+        </p>
+        <p>The Connection class is used to instantiate a connection object based on
+          the type of database being referenced. A platform specific connection string
+          is required along with a data source.  This object then represents an open
+          database connection.  The Command class holds a SQL statement used for data
+          retrieval.  DataReader classes retrieve rows from a database using its
+          connection and command objects.  DataAdapter objects exhange data between
+          data sources and the dataset, which is the in-memory representation of the
+          data.
+        </p>
+        <p>Other classes and objects beyond the core classes are available as well.
+          These, in fact, barely scratch the surface of datbase operations using C#.
+          One of these, the DataGridView class, is widely used to format and display
+          data in a familiar row and column structure for Windows Forms.
+        </p>
+      </section>
+      <section class="main-section" id="LINQ">
+        <header>
+          <h1>LINQ</h1>
+          <hr>
+        </header>
+        <p>LINQ, or <em>Language Integrated Query,</em> is a way to query over a collection.
+          Using queries natural to relational databases in the programming language
+          allows data manipulation independently of data sources.  In other words,
+          the differences in database systems are smoothed out by writing queries
+          in (usually) server side code.
+        </p>
+        <p>Queries can also be written against collections of objects. Any data type
+          that implements the IEnumerable<T> interface can be queried over.  In addition
+          to relational data and XML data, this also includes arrays, which extends
+          the functionality as most complex data structures are implemented using arrays
+          in C#.
+        </p>
+        <p>C# maintains a number of contextual keywords to facilitate these operations.
+          In other circumstances they are not considered keywords, but in a query
+          the following keywords are also recognized:
+          <ul>
+            <li>from</li>
+            <li>select</li>
+            <li>where</li>
+            <li>equals</li>
+            <li>in</li>
+            <li>on</li>
+            <li>into</li>
+            <li>let</li>
+            <li>join</li>
+            <li>orderby</li>
+            <li>group</li>
+            <li>by</li>
+            <li>ascending</li>
+            <li>descending</li>
+          </ul>
+      </section>
+      <footer>
+        <h2>Sources</h2>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+            class="source">
+            Wikipedia - C Sharp (Programming Language)</a></li>
+          <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/" class="source">
+            Microsoft Docs - C# Docs</a></li>
+          <li><a class="source">C# Programming From Problem Analysis to Program Design</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
