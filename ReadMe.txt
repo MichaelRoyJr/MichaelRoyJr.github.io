@@ -12,4 +12,7 @@ Included as well are files for the following pages:
         Short page of facts, a timeline of the scientist's life, and some images.
     -Lansing Activities Sign-up form:
         Survey form and sign-up sheet for a fictional entity, 'Lansing Activities.'
-        Inputs are verified for format, but not processed further.      
+        Inputs are verified for format, but not processed further.
+    -Technical Document:
+        Detailed description of many features of the C# programming language.
+        Includes code samples.
