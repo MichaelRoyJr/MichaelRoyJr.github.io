@@ -2,9 +2,9 @@ This repository is temporarily holding some of the static web pages created to
 fulfill the requirements of FreeCodeCamp's Responsive Web Design Certification.
 All items were created using HTML5 and CSS only.
 
-Currently, the displayed item is a fictional Product Landing Page for the 2020
-Chevrolet Corvette.  The layout was created using CSS flexbox controls.  Data
-entered is verified, but not processed.
+The main page is my portfolio, presented within the specifications of FreeCodeCamp.
+Contains links to all the other pages discussed here, as well as descriptions
+and source code.
 
 Included as well are files for the following pages:
 
@@ -16,3 +16,8 @@ Included as well are files for the following pages:
     -Technical Document:
         Detailed description of many features of the C# programming language.
         Includes code samples.
+    -Product Landing Page:
+        Landing page for the new 2020 Chevrolet Corvette.
+        Intended as the destination for an advertising click from another source.
+        Collects and verifies some user data, though not used.
+        Heavy use of CSS flexbox controls.
